@@ -1,9 +1,6 @@
 package com.dancaps.leet;
 
 public class RomanToInteger {
-    //String s = "III";
-    //Output: 3
-    //Explanation: III = 3.
 
     public static void main(String[] args) {
         String s = "MCMXCIV";
@@ -60,14 +57,5 @@ public class RomanToInteger {
         }
         System.out.println("Input:  " + s);
         System.out.println("Output: " + sum);
-
-            //switch (charArray[index])) {
-            //case
-            // check if index value is a I
-                // True: Is the next value a V
-                    //True: Add 4 to sum
-                    // Add 1 to index to bypass the next run of V
-                // False: Add 1 to sum
     }
-
 }
