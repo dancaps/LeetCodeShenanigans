@@ -17,13 +17,13 @@ public class ValidParentheses {
         }
 
         for (int index = 0; index < c.length; index++) {
-            // if it's an open bracket
+            // if it's an open bracket add it to the stack
             if (c[index] == '(' || c[index] == '[' || c[index] == '{') {
                 //put it on the stack
                 stack.addFirst(c[index]);
-                // if it's a closing bracket
+            // if it's a closing bracket, get more information
             } else if (c[index] == ')' || c[index] == ']' || c[index] == '}') {
-                // if it's a closing bracket and the stack is not empty
+                // if it's a closing bracket and the stack is not empty check for a valid opening bracket
                 if (stack.isEmpty() == false) {
                     // if the top of the stack is ( && c[index] is )
                     if (stack.peekFirst() == '(' && c[index] == ')') {
@@ -42,7 +42,7 @@ public class ValidParentheses {
                         System.out.println("false");
                         System.exit(0);
                     }
-                } else { // incorrect value
+                } else { // closing bracket with an empty stack
                     System.out.println("false");
                     System.exit(0);
                 }
