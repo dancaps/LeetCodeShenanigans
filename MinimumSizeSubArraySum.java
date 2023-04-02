@@ -57,8 +57,8 @@ public class MinimumSIzeSubArraySum {
 
                 // move the left side of the window until the window closes or sum drops below the target
                 while (left <= right && sum >= target) { 
-                    sum -= nums[left]; // Removes the left value
-                    left++; // moves left over to the next spot
+                    sum -= nums[left++]; // Removes the left value and moves left over to the next spot
+                    
                     if (sum >= target) { // Checks again to see if the sum is still greater than the target
                         // Hooray this is shorter, so we update the answer length
                         answer_length = Math.min(answer_length, right - left + 1); 
