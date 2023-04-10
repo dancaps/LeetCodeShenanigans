@@ -7,7 +7,7 @@ Explanation: [1,1,1,0,0,1,1,1,1,1,1]
 Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
 */
 
-class Solution {
+class MaxConsecutiveOnes {
     public int longestOnes(int[] nums, int k) {
         int answer = 0;
         int left = 0;

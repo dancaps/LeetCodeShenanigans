@@ -10,7 +10,9 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+
+/*
+class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode head = new ListNode(); // Creates a new head list node to initalize the list
         ListNode tmp = head; // Create a tmp reference to the head node
@@ -36,3 +38,5 @@ class Solution {
         return head.next; // Returns the second node because that is the true start of the new list
     }
 }
+
+ */

@@ -9,7 +9,7 @@ Output: 12.75000
 Explanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
 */
 
-class Solution {
+class MaxAvgSubarray {
     public double findMaxAverage(int[] nums, int k) {
         double value = 0;
         double answer = 0;

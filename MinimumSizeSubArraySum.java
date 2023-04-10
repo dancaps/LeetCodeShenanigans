@@ -20,9 +20,7 @@
  * Output: 0
  */
 
-package com.dancaps.leet;
-
-public class MinimumSIzeSubArraySum {
+public class MinimumSizeSubArraySum {
     public static void main(String[] args) {
         int[] nums = {5334,6299,4199,9663,8945,3566,9509,3124,6026,6250,7475,5420,9201,9501,38,5897,4411,6638,9845,161,
                 9563,8854,3731,5564,5331,4294,3275,1972,1521,2377,3701,6462,6778,187,9778,758,550,7510,6225,8691,3666,
