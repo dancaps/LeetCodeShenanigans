@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6a1c296-d119-4f49-9863-73808453b1b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCodeShenanigans.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestingIdeas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaxAvgSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/MaxAvgSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaxConsecutiveOnes.java" beforeDir="false" afterPath="$PROJECT_DIR$/MaxConsecutiveOnes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/MergeTwoSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinimumSizeSubArraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/MinimumSizeSubArraySum.java" afterDir="false" />
+    <list default="true" id="a6a1c296-d119-4f49-9863-73808453b1b4" name="Changes" comment="UPDATE: workspace.xml">
+      <change afterPath="$PROJECT_DIR$/CountingElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,15 +30,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,9 +48,58 @@
       <option name="presentableId" value="Default" />
       <updated>1681168023225</updated>
     </task>
+    <task id="LOCAL-00001" summary="Made some changes so that I can use this project in IntelliJ">
+      <created>1681168423308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681168423308</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ADD: IntelliJ Files">
+      <created>1681168458578</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681168458578</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ADD: IntelliJ Files">
+      <created>1681176637463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176637463</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ADD: Add a couple new solutions based on sets">
+      <created>1681176768729</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176768729</updated>
+    </task>
+    <task id="LOCAL-00005" summary="UPDATE: .gitignore">
+      <created>1681176867696</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176867696</updated>
+    </task>
+    <task id="LOCAL-00006" summary="UPDATE: worksoace.xml">
+      <created>1681176996518</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176996518</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Made some changes so that I can use this project in IntelliJ" />
+    <MESSAGE value="ADD: IntelliJ Files" />
+    <MESSAGE value="ADD: Add a couple new solutions based on sets" />
+    <MESSAGE value="UPDATE: .gitignore" />
+    <MESSAGE value="UPDATE: worksoace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE: worksoace.xml" />
   </component>
 </project>
