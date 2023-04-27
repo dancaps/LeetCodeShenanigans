@@ -21,7 +21,7 @@ Input: s = "Test1ng-Leet=code-Q!"
 Output: "Qedo1ct-eeLg=ntse-T!"
 */
 
-class Solution {
+class ReverseOnlyLetters {
     public String reverseOnlyLetters(String s) {
         char[] answer = s.toCharArray();
         int i = 0, j = answer.length - 1;
