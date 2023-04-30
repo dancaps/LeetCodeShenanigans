@@ -27,29 +27,19 @@ public class RansomNote {
         String magazine = "b";
 
         Map<Character, Integer> mag = new HashMap<>();
-        Map<Character, Integer> note = new HashMap<>();
-        char[] cMag = magazine.toCharArray();
-        char[] cNote = ransomNote.toCharArray();
 
-        for (char c : cMag) {
-            mag.put(c, mag.getOrDefault(c, 0) + 1);
+        for (int i = 0; i < magazine.length(); i++) {
+            mag.put(magazine.charAt(i), mag.getOrDefault(magazine.charAt(i), 0) + 1);
         }
 
-        for (char c : cNote) {
-            note.put(c, note.getOrDefault(c, 0) + 1);
-        }
-
-        System.out.println(Arrays.toString(cMag));
-        System.out.println(Arrays.toString(cNote));
-        System.out.println(mag);
-        System.out.println(mag.getOrDefault('a', 0));
-
-        for (char c : cNote) {
-            if (mag.getOrDefault(c, 0) < note.get(c)) {
-                System.out.println("False");
+        for (int i = 0; i < ransomNote.length(); i++) {
+            char key = ransomNote.charAt(i);
+            if (mag.getOrDefault(key, 0) < 1) {
+                System.out.println("False"); // this would be a return
+                break; // this would not be here
             }
+            mag.replace(key, mag.get(key) - 1);
         }
-
         // this would be a return statement
         System.out.println("True");
     }
