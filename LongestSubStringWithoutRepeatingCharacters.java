@@ -50,9 +50,7 @@ public class LongestSubStringWithoutRepeatingCharacters {
                 while (left < right && s.charAt(left) != s.charAt(right)) {
                     characters.remove(s.charAt(left++));
                 }
-
-                characters.remove(s.charAt(left++));
-                characters.add(s.charAt(right));
+                left++;
             }
         }
 
