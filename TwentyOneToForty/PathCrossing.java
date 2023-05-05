@@ -36,8 +36,8 @@ public class PathCrossing {
 
     public static boolean solution(String path) {
 
-        Map<Integer, List<Integer>> coordinates = new HashMap<>();
-        coordinates.put(-1, new ArrayList<>(Arrays.asList(0, 0))); // Adds starting value
+        Set<List<Integer>> coordinates = new HashSet<>();
+        coordinates.add(new ArrayList<>(Arrays.asList(0, 0)));
         int x = 0;
         int y = 0;
 
@@ -49,10 +49,10 @@ public class PathCrossing {
                 case 'E' -> x++;
                 case 'W' -> x--;
             }
-            if (coordinates.containsValue(Arrays.asList(x, y))) {
+            if (coordinates.contains(Arrays.asList(x, y))) {
                 return true;
             }
-            coordinates.put(i, new ArrayList<>(Arrays.asList(x, y)));
+            coordinates.add(new ArrayList<>(Arrays.asList(x, y)));
         }
 
         return false;
