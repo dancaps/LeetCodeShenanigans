@@ -1,4 +1,4 @@
-package com.dancaps.leet;
+package OneToTwenty;
 
 /*
 Given a string s, reverse the order of characters in each word within a sentence while

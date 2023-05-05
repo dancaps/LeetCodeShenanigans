@@ -1,4 +1,4 @@
-package com.dancaps.leet;
+package OneToTwenty;
 
 /**
  * My implementation of a single linked list that contains a private Node class

@@ -1,6 +1,6 @@
 // Sadly the challenge wanted me to use their singly linked list class which is annoying, so I'll do both.
 
-package com.dancaps.leet;
+package OneToTwenty;
 
 import java.util.LinkedList;
 

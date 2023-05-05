@@ -1,3 +1,5 @@
+package TwentyOneToForty;
+
 import java.util.*;
 
 /**

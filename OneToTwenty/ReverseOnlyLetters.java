@@ -1,4 +1,4 @@
-// I love it when the solution just comes to your brain without any effort!
+package OneToTwenty;// I love it when the solution just comes to your brain without any effort!
 
 /*
 Given a string s, reverse the string according to the following rules:

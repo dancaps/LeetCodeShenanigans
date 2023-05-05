@@ -1,4 +1,4 @@
-package com.dancaps.leet;
+package OneToTwenty;
 
 /**
  * Testing the SinglyLinkedDingly list

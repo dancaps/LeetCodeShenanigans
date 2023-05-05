@@ -17,7 +17,7 @@ Input: nums = [0]
 Output: [0]
 */
 
-package com.dancaps.leet;
+package OneToTwenty;
 
 import java.util.Arrays;
 

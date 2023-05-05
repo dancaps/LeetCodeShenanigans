@@ -1,6 +1,6 @@
 // My first use of the stack data structure. I love it!
 
-package com.dancaps.leet;
+package OneToTwenty;
 
 import java.util.LinkedList;
 
