@@ -19,16 +19,16 @@ package TwentyOneToForty;
  */
 
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+//**
+// * Definition for singly-linked list.
+//         * public class ListNode {
+// *     int val;
+// *     ListNode next;
+// *     ListNode() {}
+// *     ListNode(int val) { this.val = val; }
+// *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+// * }
+// */
 //class Solution {
 //    public ListNode reverseBetween(ListNode head, int left, int right) {
 //        int currIndex = 1;
@@ -43,61 +43,42 @@ package TwentyOneToForty;
 //        }
 //
 //        while (curr != null && currIndex <= right + 1) {
-//            if (currIndex < left - 1) {
-//                curr = curr.next;
-//                System.out.println("< left - 1: " + currIndex);
-//                currIndex++;
-//                continue;
-//            }
 //
 //            if (currIndex == left - 1) {
 //                prevLeft = curr;
+//            }
+//
+//            if (currIndex <= left - 1) {
 //                curr = curr.next;
-//                System.out.println("== left - 1: " + currIndex);
 //                currIndex++;
 //                continue;
 //            }
 //
 //            if (currIndex == left) {
-//                System.out.println("== left: " + currIndex);
 //                leftNode = curr;
 //            }
 //
 //            while (currIndex >= left && currIndex <= right) {
 //                ListNode nextNode = curr.next;
 //                curr.next = prev;
+//
 //                if (currIndex == right && left > 1) {
 //                    prevLeft.next = curr;
-//                    System.out.println("== right &&  left > 1: " + currIndex);
 //                }
-//                // if (currIndex == right && left <= 1) {
-//                //     leftNode.next = null;
-//                //     System.out.println("== right && left <= 1: " + currIndex);
-//                // }
+//
 //                prev = curr;
 //                curr = nextNode;
-//                System.out.println("in loop: " + currIndex);
 //                currIndex++;
 //            }
 //
-//            // if (currIndex == right) {
-//            //     prevLeft.next = curr;
-//            //     curr = curr.next;
-//            //     System.out.println("== right: " + currIndex);
-//            //     currIndex++;
-//            // }
-//
 //            if (currIndex == right + 1) {
 //                leftNode.next = curr;
-//                System.out.println("== right + 1: " + currIndex);
 //                currIndex++;
 //            }
 //        }
 //
 //        if (left == 1 && currIndex == right + 2) {
 //            head = prev;
-//            System.out.println("currIndex == right + 1: " + currIndex);
-//
 //        }
 //
 //        return head;
