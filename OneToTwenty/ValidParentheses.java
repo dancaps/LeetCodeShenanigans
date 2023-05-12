@@ -1,60 +1,79 @@
-// My first use of the stack data structure. I love it!
-
 package OneToTwenty;
 
-import java.util.LinkedList;
+import java.util.*;
+
+/**
+ * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+ * An input string is valid if:
+ * Open brackets must be closed by the same type of brackets.
+ * Open brackets must be closed in the correct order.
+ * Every close bracket has a corresponding open bracket of the same type.
+ *
+ * Example 1:
+ * Input: s = "()"
+ * Output: true
+ *
+ * Example 2:
+ * Input: s = "()[]{}"
+ * Output: true
+ *
+ * Example 3:
+ * Input: s = "(]"
+ * Output: false
+ *
+ * Constraints:
+ * 1 <= s.length <= 104
+ * s consists of parentheses only '()[]{}'.
+ */
 
 public class ValidParentheses {
     public static void main(String[] args) {
-        String s = "((){})[]()()()()(){{{{}}}}";
-        char[] c = s.toCharArray();
-        LinkedList<Character> stack = new LinkedList<>(); // Used as the stack data structure
+        System.out.println("Expected: true, Actual: " + solution("((){})[]()()()()(){{{{}}}}"));
+        System.out.println("Expected: true, Actual: " + solution("()"));
+        System.out.println("Expected: true, Actual: " + solution("()[]{}"));
+        System.out.println("Expected: false, Actual: " + solution("(}"));
+    }
 
-        // If the array is an odd number return false
-        if (c.length % 2 == 1) {
-            System.out.println("false");
-            System.exit(0);
-        }
+    public static boolean solution (String s) {
+        Deque<Character> stack = new ArrayDeque<>();
+        Map<Character, Character> mappings = new HashMap<>();
+        mappings.put('(', ')');
+        mappings.put('[', ']');
+        mappings.put('{', '}');
 
-        for (int index = 0; index < c.length; index++) {
-            // if it's an open bracket add it to the stack
-            if (c[index] == '(' || c[index] == '[' || c[index] == '{') {
-                //put it on the stack
-                stack.addFirst(c[index]);
-            // if it's a closing bracket, get more information
-            } else if (c[index] == ')' || c[index] == ']' || c[index] == '}') {
-                // if it's a closing bracket and the stack is not empty check for a valid opening bracket
-                if (stack.isEmpty() == false) {
-                    // if the top of the stack is ( && c[index] is )
-                    if (stack.peekFirst() == '(' && c[index] == ')') {
-                        // remove the top of the stack
-                        stack.removeFirst();
-                    // else if the top of the stack is [ && c[index] is ]
-                    } else if (stack.peekFirst() == '[' && c[index] == ']') {
-                        // remove the top of the stack
-                        stack.removeFirst();
-                    // else if the top of the stack is { && c[index] is }
-                    } else if (stack.peekFirst() == '{' && c[index] == '}') {
-                        // remove the top of the stack
-                        stack.removeFirst();
-                    // there is an incorrect combination therefor it's false
-                    } else {
-                        System.out.println("false");
-                        System.exit(0);
-                    }
-                } else { // closing bracket with an empty stack
-                    System.out.println("false");
-                    System.exit(0);
+        for (int i = 0; i < s.length(); i++) {
+            if (mappings.containsKey(s.charAt(i))) {
+                stack.push(s.charAt(i));
+            } else {
+                if (stack.isEmpty()) {
+                    return false;
+                }
+                char top = stack.pop();
+                if (mappings.get(top) != s.charAt(i)) {
+                    return false;
                 }
             }
         }
-        // if the stack is empty and the loop is done, the world is wonderful
-        if (stack.isEmpty()) {
-            System.out.println("true");
-            System.exit(0);
-        }
-        // the stack still has something in it, the world is on fire
-        System.out.println("false");
-        System.exit(0);
+
+        return stack.isEmpty();
     }
 }
+/** Pseudocode
+ *  Deque<Character> stack = new ArrayDeque<Character>();
+ *  Map<Character, Character> mappings = new HashMap<>()
+ *  add the parenthesis sets to the HM
+ *
+ *  loop the string
+ *      if the char is a key
+ *          push to the stack
+ *      else
+ *          if the stack is empty
+ *              return false
+ *          pop the stack
+ *          if the HM.get(pop) != char
+ *              return false
+ * if the stack is not empty
+ *  return false
+ *
+ * return true
+ */
