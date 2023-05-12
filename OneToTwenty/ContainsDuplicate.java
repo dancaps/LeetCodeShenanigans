@@ -32,15 +32,13 @@ public class ContainsDuplicate {
     }
 
     public static boolean solution(int[] nums) {
+        Set<Integer> values = new HashSet<>();
 
-        Set<Integer> numbers = new HashSet<>();
-
-        for (int n : nums) {
-            if (numbers.contains(n)) {
+        for (int i = 0; i < nums.length; i++) {
+            if (values.contains(nums[i])) {
                 return true;
-            } else {
-                numbers.add(n);
             }
+            values.add(nums[i]);
         }
         return false;
     }
