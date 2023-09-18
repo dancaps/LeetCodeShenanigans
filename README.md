@@ -65,3 +65,12 @@ They are similar to an array; however, they are not contiguous in memory. In the
 a value and a reference to the next node. You typically call the first node the head. That is the starting point of the LL. I think 
 of this as head is like [0] and head.next is [1] and head.next.next is [2] and so on. The cool thing about them is you can add to 
 the front or back as O(1) and you don't need to worry about resizing like you would with an array.
+
+Strategies
+
+Fast and slow pointers:
+
+    We can start two pointers at head. One can move 1 element at a time, while the fast pointer can move 2 elements at a time.
+    In LLs we don't know the length of the list. Suppose we have a problem to return the middle element in the list. We could
+    iterate it and find the length or use fast and slow pointers. Once the fast pointer reaches the end the slow pointer will 
+    be halfway through. We can change the speed of the pointers based on the problem requirements.
