@@ -31,4 +31,30 @@ Prefix sum:
     The prefix is good at quickly finding the sum of two values in an array. The forumla is right - (left - 1)
     It is also useful when finding the min or max values.
     It works when you want to find the index of a middle index where everything to the left equals the same as everything to the right.
-    
+
+About HashMaps
+
+Consider the following strategies
+
+Counting occurances of items:
+
+    Find the unique value between two strings or arrays.
+    Count each item and compare the results
+
+Don't forget about Sets:
+
+    In some cases you can use sets to show you the answers.
+    1207 - Check to see if the input is only unique values.
+    Put it in a set and check the length of the set against the length of values.
+
+Frequencies:
+
+    Find the number that has the same number of occurances as it's value.
+    Put it in a HashMap and check if key is equal to the value.
+
+Mapping: 
+
+    Isometric 205 and word patterns 290
+    In these problems you map values in a string or array to other values in a string or array.
+    This requires 2 hashmaps to check the key to value in each direction.
+    Use a loop of index to look in all the differnt data structures
