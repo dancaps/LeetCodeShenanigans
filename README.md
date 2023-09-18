@@ -58,3 +58,10 @@ Mapping:
     In these problems you map values in a string or array to other values in a string or array.
     This requires 2 hashmaps to check the key to value in each direction.
     Use a loop of index to look in all the differnt data structures
+
+About Linked Lists
+
+They are similar to an array; however, they are not contiguous in memory. In their simplest form they are a construct that hold
+a value and a reference to the next node. You typically call the first node the head. That is the starting point of the LL. I think 
+of this as head is like [0] and head.next is [1] and head.next.next is [2] and so on. The cool thing about them is you can add to 
+the front or back as O(1) and you don't need to worry about resizing like you would with an array.
