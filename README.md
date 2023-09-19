@@ -61,16 +61,25 @@ Mapping:
 
 About Linked Lists
 
-They are similar to an array; however, they are not contiguous in memory. In their simplest form they are a construct that hold
-a value and a reference to the next node. You typically call the first node the head. That is the starting point of the LL. I think 
-of this as head is like [0] and head.next is [1] and head.next.next is [2] and so on. The cool thing about them is you can add to 
-the front or back as O(1) and you don't need to worry about resizing like you would with an array.
+They are similar to an array; however, they are not contiguous in memory. In their simplest form they are a construct that 
+holds a value and a reference to the next node. You call the first node the head or you can use a sentinel node at the 
+beginning so that you always have a reference to head. That is the starting point of the LL. If there is not a sentinel node then
+head is like [0] and head.next is [1] and head.next.next is [2] and so on. If there is a sentinel node then head is just a pointer and
+head.next is [0], head.next.next is [1], head.next.next.next [2], etc. The cool thing about them is you can add to the front in O(1) time 
+because you don't need to worry about resizing like you would with an array.
 
 Strategies
 
 Fast and slow pointers:
 
-    We can start two pointers at head. One can move 1 element at a time, while the fast pointer can move 2 elements at a time.
+    We can start two pointers at head. Slow can move 1 element at a time, while the fast pointer can move 2 elements at a time.
     In LLs we don't know the length of the list. Suppose we have a problem to return the middle element in the list. We could
-    iterate it and find the length or use fast and slow pointers. Once the fast pointer reaches the end the slow pointer will 
+    iterate it and find the length or even better use fast and slow pointers. Once the fast pointer reaches the end the slow pointer will 
     be halfway through. We can change the speed of the pointers based on the problem requirements.
+
+    Another option for fast slow pointers is find a cyclical node, which means the LL never ends because it's in a circle. If you 
+    use this strategy eventually the pointers will land on the same node so you want test for that in the loop.
+
+    We can use this strategy to find a numbered element in the LL. We would create a fixed gap between the fast and slow pointer. 
+    When fast reaches the end, slow will be on the node. In this case you would use a for loop to create the gap and then while loop 
+    to iterate through the LL.
